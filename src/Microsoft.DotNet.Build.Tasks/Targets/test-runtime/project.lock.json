@@ -1,5 +1,5 @@
 {
-  "locked": true,
+  "locked": false,
   "version": 1,
   "targets": {
     "DNXCore,Version=v5.0": {
@@ -7327,10 +7327,9 @@
       "type": "package",
       "sha512": "QJLuUzAD50drCp5P+PiWHh/TKcNBbsgnnZiN600YtRPx5DP4aY4MpVeY1oYs8eOnuhCZW+5TqcpUct3oHJigIQ==",
       "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
+        "coveralls.io.1.4.0.nupkg",
+        "coveralls.io.1.4.0.nupkg.sha512",
         "coveralls.io.nuspec",
-        "package/services/metadata/core-properties/746ff290a4d24d1aa0f9843c51cd2208.psmdcp",
         "tools/CommandLine.dll",
         "tools/CommandLine.xml",
         "tools/Coveralls.dll",
@@ -7604,15 +7603,14 @@
       "type": "package",
       "sha512": "bor8lEgWH0upmsYg4/aj0CMOsczSwwGy6tBZRC26T1pBs1D2IkVQ/EHU/Shn5SjQ8M04cp8N4xiLFMzF8GzT6g==",
       "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
         "docs/ReleaseNotes.txt",
         "docs/Usage.rtf",
         "License.rtf",
         "MSBuild/OpenCover.MSBuild.dll",
         "MSBuild/OpenCover.targets",
+        "OpenCover.4.6.166.nupkg",
+        "OpenCover.4.6.166.nupkg.sha512",
         "OpenCover.nuspec",
-        "package/services/metadata/core-properties/4fe83ffa9479499aaa3f61a5f28de643.psmdcp",
         "readme.txt",
         "Samples/x64/OpenCover.Simple.Target.exe",
         "Samples/x64/OpenCover.Simple.Target.pdb",
@@ -11596,14 +11594,12 @@
     },
     "System.Threading.Overlapped/4.0.0": {
       "type": "package",
+      "serviceable": true,
       "sha512": "X5LuQFhM5FTqaez3eXKJ9CbfSGZ7wj6j4hSVtxct3zmwQXLqG95qoWdvILcgN7xtrDOBIFtpiyDg0vmoI0jE2A==",
       "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
         "lib/DNXCore50/System.Threading.Overlapped.dll",
         "lib/net46/System.Threading.Overlapped.dll",
         "lib/netcore50/System.Threading.Overlapped.dll",
-        "package/services/metadata/core-properties/e9846a81e829434aafa4ae2e8c3517d7.psmdcp",
         "ref/dotnet/de/System.Threading.Overlapped.xml",
         "ref/dotnet/es/System.Threading.Overlapped.xml",
         "ref/dotnet/fr/System.Threading.Overlapped.xml",
@@ -11616,6 +11612,8 @@
         "ref/dotnet/zh-hans/System.Threading.Overlapped.xml",
         "ref/dotnet/zh-hant/System.Threading.Overlapped.xml",
         "ref/net46/System.Threading.Overlapped.dll",
+        "System.Threading.Overlapped.4.0.0.nupkg",
+        "System.Threading.Overlapped.4.0.0.nupkg.sha512",
         "System.Threading.Overlapped.nuspec"
       ]
     },
@@ -11949,13 +11947,12 @@
       "type": "package",
       "sha512": "NAdxKQRzuLnCZ0g++x6i87/8rMBpQoRiRlRNLAqfODm2zJPbteHRoSER3DXfxnqrHXyBJT8rFaZ8uveBeQyaMA==",
       "files": [
-        "[Content_Types].xml",
-        "_rels/.rels",
         "lib/net35/xunit.abstractions.dll",
         "lib/net35/xunit.abstractions.xml",
         "lib/portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS/xunit.abstractions.dll",
         "lib/portable-net45+win+wpa81+wp80+monotouch+monoandroid+Xamarin.iOS/xunit.abstractions.xml",
-        "package/services/metadata/core-properties/24083640fee244bf9de77f4c35d40a72.psmdcp",
+        "xunit.abstractions.2.0.0.nupkg",
+        "xunit.abstractions.2.0.0.nupkg.sha512",
         "xunit.abstractions.nuspec"
       ]
     },

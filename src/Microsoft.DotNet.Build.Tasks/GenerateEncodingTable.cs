@@ -199,7 +199,7 @@ namespace Microsoft.DotNet.Build.Tasks
 
         private IEnumerable<KeyValuePair<int, string[]>> DelimitedFileRows(string path, int columns = 0)
         {
-            using (var input = new StreamReader(path))
+            using (var input = new StreamReader(new FileStream(path, FileMode.Open, FileAccess.Read, FileShare.Read)))
             {
                 int lineNumber = 1;
                 string line;
