@@ -24,10 +24,8 @@
           BeforeTargets="ResolveNuGetPackages"
           Condition="'$(RestorePackages)'=='true' and !('$(VSDesignTimeBuild)'=='true' and '$(VisualStudioVersion)' >= '14.0')">
 
-    <Error Condition="'$(NugetRestoreCommand)'=='' and Exists('$(ProjectPackagesConfigFile)')" Text="RestorePackages target needs a predefined NugetRestoreCommand property set in order to restore $(ProjectPackagesConfigFile)" /> 
     <Error Condition="'$(DnuRestoreCommand)'=='' and Exists('$(ProjectJson)')" Text="RestorePackages target needs a predefined DnuRestoreCommand property set in order to restore $(ProjectJson)" /> 
-    
-    <Exec Condition="Exists('$(ProjectPackagesConfigFile)')" Command="$(NugetRestoreCommand) &quot;$(ProjectPackagesConfigFile)&quot;" StandardOutputImportance="Low" />
+
     <Exec Condition="Exists('$(ProjectJson)')" Command="$(DnuRestoreCommand) &quot;$(ProjectJson)&quot;" StandardOutputImportance="Low" CustomErrorRegularExpression="^Unable to locate .*" />
   </Target>
   <ItemGroup Condition="'$(ResolvePackages)'=='true' or '$(PrereleaseResolveNuGetPackages)'=='true'">

@@ -86,7 +86,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackagesConfigs Include="$(ProjectPackagesConfigFile)" />
     <PackagesConfigs Include="$(TestRuntimePackageConfig)" />
   </ItemGroup>
 

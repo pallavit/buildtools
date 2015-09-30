@@ -11,9 +11,9 @@
     <CLSCompliant>false</CLSCompliant>
     <AssemblyVersion>1.0.0.0</AssemblyVersion>
     <SkipSigning>true</SkipSigning>
-	<!-- Microsoft.Build.* packages are built on .NetPortable Version 5.0 while BuildTools are built as .NetPortable v4.5, Profile7-->
+    <!-- Microsoft.Build.* packages are built on .NetPortable Version 5.0 while BuildTools are built as .NetPortable v4.5, Profile7-->
     <ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>true</ResolveAssemblyReferenceIgnoreTargetFrameworkAttributeVersionMismatch>
-	<Platform>x86</Platform>
+    <Platform>x86</Platform>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
   </PropertyGroup>
@@ -55,7 +55,7 @@
     <ItemGroup>
       <PackageFiles Include="$(MSBuildThisProjectDirectory)Targets\**\*.*" />
     </ItemGroup>
- <ItemGroup>
+    <ItemGroup>
       <PublishedRuntimeItems Include="@(ReferenceCopyLocalPaths)">
         <DestinationRelativePath>%(FileName)%(Extension)</DestinationRelativePath>
       </PublishedRuntimeItems>

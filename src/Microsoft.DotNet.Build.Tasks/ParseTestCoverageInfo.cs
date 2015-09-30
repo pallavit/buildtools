@@ -115,7 +115,7 @@ namespace Microsoft.DotNet.Build.Tasks
 
             Log.LogMessage(MessageImportance.Normal, "Writing {0}", OutputReport);
 
-            using (XmlWriter xWriter = XmlWriter.Create(new FileStream(OutputReport, FileMode.Create, FileAccess.Write, FileShare.Read), settings))
+            using (XmlWriter xWriter = XmlWriter.Create(File.OpenWrite(OutputReport), settings))
             {
                 xWriter.WriteStartDocument();
                 xWriter.WriteStartElement("Tests"); // <Tests>
